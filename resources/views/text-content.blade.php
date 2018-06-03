@@ -12,10 +12,12 @@
 		  <h2>{{$text->caption}}</h2>
 		    <textarea class="form-control form_style" name="text"> {{$text->text}}</textarea>
 		  </div>
-		  
-		  @if(Auth::user()-> name== $text->user)
+		  @if (isset(Auth::user()-> name))
+		  	@if(Auth::user()-> name== $text->user)
 		  	<button type="submit" class="btn btn-default">Перезаписать</button>
+		  	@endif
 		  @endif
+
 		   {{ csrf_field() }}
 		    
 		</form>
