@@ -18,38 +18,40 @@ class PostsController extends Controller
 		$this->ref = substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length/strlen($x)) )),1,$length);
 	}
 	
+
 	public function show($link) {
 		
-		//$article = Article::find($id);
-		
-		//SELECT 'id','title','text'  WHERE id = $id
-		$text = Texts_user::select(['link','caption','text'])->where('link',$link)->first();
-		
-		//dump($article);
-		
+		$text = Texts_user::select(['link','caption','text','user'])->where('link',$link)->first();
 		return view('text-content')->with([
 									'text' => $text
 									
 									]);
-		
+	
+	}
+	public function delete($link) {
+		if (Auth::user())
+		{
+			Texts_user::where('link',$link)->delete();
+		}
+		return redirect()->action(
+  		'HomeController@index', ['/home']
+		);
+	
 	}
 	
 	
 	
-	
-	
-	
 	public function add() {
+		$text = Texts_user::select(['link','user','caption'])->get();
 		return view('mainPage')->with([
-									'ref'=>$this->ref,
-									'user' => $this->user
+									'texts' => $text
 									]);
 	}
 	
 	public function store(Request $request) {
 		$this->validate($request, [
 		
-			'caption' => 'required|max:255|nullable',
+			'caption' => 'max:255|nullable',
 			'text' => 'required'
 		
 		]);
@@ -61,6 +63,10 @@ class PostsController extends Controller
 		else{
 			$data['user'] ='Guest';
 		}
+		if ($data['caption']== null)
+		{
+			$data['caption']= 'Без названия';
+		}
 		$data['link'] = $this->ref;
 		$text = new Texts_user;
 		$text->fill($data);
@@ -70,8 +76,26 @@ class PostsController extends Controller
   		'PostsController@show', ['link' => $this->ref]
 		);
 		
-		///
-		///
+	}
+	
+	
+	public function restore(Request $request, $link) {
+		$text = Texts_user::select()->where('link',$link)->first();
+		$data = $request->all();
+		$this->validate($request, [
+		
+			'text' => 'required'
+		
+		]);
+		if (Auth::user())
+		{
+			$text['text'] = $data['text'];
+			$text->save();
+		}
+
+		return redirect()->action(
+  		'PostsController@show', ['link' => $link]
+		);
 		
 	}
 }

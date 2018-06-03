@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use App\Texts_user;
 
 class HomeController extends Controller
 {
@@ -24,7 +25,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-    	dump(Auth::user());
-        return view('home');
+    	$text = Texts_user::select(['link','caption','created_at'])->where('user',Auth::user()->name)->get();
+		
+        return view('home')->with([
+									'texts' => $text
+									
+									]);
     }
 }

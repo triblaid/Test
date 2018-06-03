@@ -12,8 +12,10 @@
 		  <h2>{{$text->caption}}</h2>
 		    <textarea class="form-control form_style" name="text"> {{$text->text}}</textarea>
 		  </div>
-		  <button type="submit" class="btn btn-default">Перезаписать</button>
 		  
+		  @if(Auth::user()-> name== $text->user)
+		  	<button type="submit" class="btn btn-default">РџРµСЂРµР·Р°РїРёСЃР°С‚СЊ</button>
+		  @endif
 		   {{ csrf_field() }}
 		    
 		</form>

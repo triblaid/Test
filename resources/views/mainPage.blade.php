@@ -42,25 +42,40 @@
       </div>
     </nav>
     
+	<div class="menu">
+		<div class="frame-left">
+			<div class="form">
+				<form method="POST" action="{{route('textStore')}}">
+				  <div class="form-group">
+				    <label for="exampleInputFile">Текст</label>
+				    <textarea class="form-control form_style" name="text"></textarea>
+				  </div>
+				  <div class="form-group">
+				    <label for="title">Заголовок</label>
+				    <input type="text" class="form-control name_style" id="caption" name="caption" placeholder="Необязательно">
+				  </div>
+				  <button type="submit" class="btn btn-default">Сохранить</button>
+				   {{ csrf_field() }}
+				    
+				</form>
 
-	<div class="form">
-	
-		<form method="POST" action="{{route('textStore')}}">
-		  <div class="form-group">
-		    <label for="exampleInputFile">Текст</label>
-		    <textarea class="form-control form_style" name="text"></textarea>
-		  </div>
-		  <div class="form-group">
-		    <label for="title">Заголовок</label>
-		    <input type="text" class="form-control name_style" id="caption" name="caption" placeholder="Необязательно">
-		  </div>
-		  <button type="submit" class="btn btn-default">Сохранить</button>
-		   {{ csrf_field() }}
-		    
-		</form>
-	
+			</div>
+		</div>
+		
+		<div class="frame-right">
+		<h4>Посты</h4>
+			@foreach($texts as $text)
+	      	
+	      	<div class="col-md-4">
+	      		<p>
+	      		{{$text->caption}} <a href="{{ url($text->link) }}">Пост</a>
+	      		</p>
+	          	<hr>
+	        </div>
+	      	
+	      @endforeach
+		</div>
     </div>
-    
 
         
  <!-- Placed at the end of the document so the pages load faster -->

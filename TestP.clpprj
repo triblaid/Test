@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="E:\OpenS\OSPanel\domains\Test\TestP.clpprj">
 	<settings><PM_URL><![CDATA[E:/OpenS/OSPanel/domains/]]></PM_URL><PM_HOME_URL><![CDATA[E:/OpenS/OSPanel/domains/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value="E:\OpenS\OSPanel\domains\Test\.env;E:\OpenS\OSPanel\domains\Test\.env.example;E:\OpenS\OSPanel\domains\Test\composer.json;E:\OpenS\OSPanel\domains\Test\package.json;"/><lastopfiles>
-		<file name="E:\OpenS\OSPanel\domains\Test\routes\web.php"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\app\Http\Controllers\PostsController.php"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\mainPage.blade.php"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\public\css\navbar-top-fixed.css"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\welcome.blade.php"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\routes\web.php"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\home.blade.php"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\config\session.php"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\.env"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\config\database.php"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\auth\login.blade.php"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\app\Http\Controllers\Auth\RegisterController.php"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\app\Texts_user.php"/>
 	</lastopfiles>
 	<errors version="5.11">
 		<errfile name="E:\OpenS\OSPanel\domains\Test\public\css\bootstrap.min.css">
@@ -6494,14 +6497,14 @@
 		<file name="E:\OpenS\OSPanel\domains\Test\vendor\doctrine\inflector\lib\Doctrine\Common\Inflector\Inflector.php" crc="1527675535"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\vendor\dnoegel\php-xdg-base-dir\tests\XdgTest.php" crc="1527675548"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\vendor\dnoegel\php-xdg-base-dir\src\Xdg.php" crc="1527675548"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\ClassLoader.php" crc="1527702205"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_static.php" crc="1527702205"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_real.php" crc="1527702205"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_psr4.php" crc="1527702205"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_namespaces.php" crc="1527702205"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_files.php" crc="1527702205"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_classmap.php" crc="1527702205"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\vendor\autoload.php" crc="1527702205"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\ClassLoader.php" crc="1527861292"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_static.php" crc="1527861292"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_real.php" crc="1527861292"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_psr4.php" crc="1527861292"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_namespaces.php" crc="1527861292"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_files.php" crc="1527861292"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\vendor\composer\autoload_classmap.php" crc="1527861292"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\vendor\autoload.php" crc="1527861292"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\tests\Unit\ExampleTest.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\tests\Feature\ExampleTest.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\tests\TestCase.php" crc="1527675398"/>
@@ -6517,30 +6520,34 @@
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\abfb4abbd56cb1b373a334f1d950ca4c565923b1.php" crc="1527703300"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\a99ef915e75811d6d0b962b5ef8f90b72a9b454c.php" crc="1527703300"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\92d2be2fdb79be71936c564f39716fbb9c88b277.php" crc="1527703300"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\8a6deb214c1167abf5f5c2a634e3e3ec1cd1bcf4.php" crc="1527699224"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\8dbc4620a3ecb89fc4c56066d593179ecc65df17.php" crc="1527870623"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\8a6deb214c1167abf5f5c2a634e3e3ec1cd1bcf4.php" crc="1527872914"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\663e0600fe57880f9555c44be3dfc035ae82443d.php" crc="1527703300"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\60b85bd0c6053e4f90b506e4465b5eb51350ce84.php" crc="1527703300"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\5b179909b532a626c9dd698b30dc0c69d5234857.php" crc="1527870746"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\45a4e11f7ac5f3ff962575042a19faea6216a6d9.php" crc="1527703300"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\33d1def9ffb1372e11c48c6f11033dd422710a6f.php" crc="1527750625"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\30b77e9db6e335153111de37be818ee34a83e0cf.php" crc="1527703300"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\2876b657078dbdb322aa89cfc826415f3b103363.php" crc="1527703300"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\26ffe4301020af2c9824a39ca6812d22cb9b8c35.php" crc="1527703300"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\0d53a8004f63847be829049ba1bba888d30b10a6.php" crc="1527762456"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\0d53a8004f63847be829049ba1bba888d30b10a6.php" crc="1527880613"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\0410494eff4531d6ab3a85e949b4ef68b33ef2d9.php" crc="1527676844"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\0335a1835f924c2c1913d98dbf6127141b7ae3ce.php" crc="1527703300"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\storage\framework\views\00e05ccc170fbb4685ef6c8056509c4f1608eaf0.php" crc="1527695683"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\routes\web.php" crc="1527754989"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\routes\web.php" crc="1527871416"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\routes\console.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\routes\channels.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\routes\api.php" crc="1527675398"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\layouts\site.blade.php" crc="1527870619"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\layouts\app.blade.php" crc="1527695615"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\auth\passwords\reset.blade.php" crc="1527695615"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\auth\passwords\email.blade.php" crc="1527695615"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\auth\register.blade.php" crc="1527695615"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\auth\login.blade.php" crc="1527695615"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\welcome.blade.php" crc="1527761652"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\mainPage.blade.php" crc="1527762398"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\home.blade.php" crc="1527695615"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\text-content.blade.php" crc="1527870745"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\mainPage.blade.php" crc="1527880611"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\resources\views\home.blade.php" crc="1527872863"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\lang\en\validation.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\lang\en\passwords.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\lang\en\pagination.php" crc="1527675398"/>
@@ -6551,12 +6558,14 @@
 		<file name="E:\OpenS\OSPanel\domains\Test\resources\assets\js\app.js" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\public\js\bootstrap.min.js" crc="1525104273"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\public\js\app.js" crc="1527675398"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\public\css\navbar-top-fixed.css" crc="1527761615"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\public\css\navbar-top-fixed.css" crc="1527859885"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\public\css\jumbotron.css" crc="1527860704"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\public\css\bootstrap.min.css" crc="1527761022"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\public\css\app.css" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\public\robots.txt" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\public\index.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\database\seeds\DatabaseSeeder.php" crc="1527675398"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\database\migrations\2018_06_01_135442_create_texts_users_table.php" crc="1527864168"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\database\migrations\2014_10_12_100000_create_password_resets_table.php" crc="1527702679"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\database\migrations\2014_10_12_000000_create_users_table.php" crc="1527703040"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\database\factories\UserFactory.php" crc="1527675398"/>
@@ -6573,8 +6582,8 @@
 		<file name="E:\OpenS\OSPanel\domains\Test\config\broadcasting.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\config\auth.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\config\app.php" crc="1527675398"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\bootstrap\cache\services.php" crc="1527702206"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\bootstrap\cache\packages.php" crc="1527702206"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\bootstrap\cache\services.php" crc="1527861294"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\bootstrap\cache\packages.php" crc="1527861294"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\bootstrap\app.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\app\Providers\RouteServiceProvider.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\app\Providers\EventServiceProvider.php" crc="1527675398"/>
@@ -6590,18 +6599,20 @@
 		<file name="E:\OpenS\OSPanel\domains\Test\app\Http\Controllers\Auth\RegisterController.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\app\Http\Controllers\Auth\LoginController.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\app\Http\Controllers\Auth\ForgotPasswordController.php" crc="1527675398"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\app\Http\Controllers\HomeController.php" crc="1527695615"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\app\Http\Controllers\PostsController.php" crc="1527880656"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\app\Http\Controllers\HomeController.php" crc="1527876946"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\app\Http\Controllers\Controller.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\app\Http\Kernel.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\app\Exceptions\Handler.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\app\Console\Kernel.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\app\User.php" crc="1527675398"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\app\Texts_user.php" crc="1527867502"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\webpack.mix.js" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\server.php" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\phpunit.xml" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\package.json" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\composer.json" crc="1527675398"/>
 		<file name="E:\OpenS\OSPanel\domains\Test\.env.example" crc="1527698411"/>
-		<file name="E:\OpenS\OSPanel\domains\Test\.env" crc="1527837094"/>
+		<file name="E:\OpenS\OSPanel\domains\Test\.env" crc="1527862678"/>
 	</filescache>
 </project>
